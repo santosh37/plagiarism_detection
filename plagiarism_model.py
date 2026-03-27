@@ -1,5 +1,15 @@
 import nltk
-nltk.download('punkt')
+
+# ✅ Download required NLTK data (IMPORTANT for deployment)
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
+
+try:
+    nltk.data.find('tokenizers/punkt_tab')
+except LookupError:
+    nltk.download('punkt_tab')
 
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
