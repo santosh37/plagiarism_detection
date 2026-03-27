@@ -1,6 +1,10 @@
+streamlit
+sentence-transformers
 scikit-learn
 nltk
-sentence-transformers
-streamlit
+matplotlib
 PyPDF2
 reportlab
+requests
+beautifulsoup4
+numpy
